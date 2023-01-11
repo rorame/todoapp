@@ -8,4 +8,4 @@
 **/migrations/0*.py
 
 #node
-/node_modules
+**/node_modules
