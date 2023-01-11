@@ -1,9 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
+
+import Header from './layout/Header';
+import DashBoard from './todo/DashBoard';
 
 class App extends Component {
     render() {
-        return <h1>Todo app</h1>
+        return (
+            <Fragment>
+                <Header />
+                <DashBoard />
+            </Fragment>
+        )
     }
 }
 
