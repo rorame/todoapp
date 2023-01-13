@@ -1,4 +1,4 @@
-# How to run
+# How to run:
 ## Backend
 1. `git clone git@github.com:rorame/todoapp.git -b main`
 2. `python3 -m venv venv`
@@ -11,3 +11,4 @@
 1. `npm i`
 2. `npm run dev`
 
+Use `http://localhost:8000`
