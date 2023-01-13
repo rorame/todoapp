@@ -5,10 +5,10 @@ import List from './List';
 export default function DashBoard() {
   return (
     <div>
-        <Fragment>
-            <Form />
-            <List />
-        </Fragment>
+      <Fragment>
+        <List />
+        <Form />
+      </Fragment>
     </div>
   )
 }

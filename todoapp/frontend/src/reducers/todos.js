@@ -4,12 +4,27 @@ const initialState = {
     todos: []
 };
 
-export default function (state = initialState, actions){
-    switch (actions.type){
+export default function (state = initialState, action) {
+    switch (action.type) {
         case GET_TODO_LIST:
             return {
                 ...state,
-                todos: actions.payload
+                todos: action.payload
+            };
+        case DELETE_TODO:
+            return {
+                ...state,
+                todos: state.todos.filter(todo => todo.id != action.payload)
+            };
+        case TOGGLE_TODO:
+            return {
+                ...state,
+                todos: [...state.todos]
+            };
+        case ADD_TODO:
+            return {
+                ...state,
+                todos: [...state.todos, action.payload]
             };
         default:
             return state;
